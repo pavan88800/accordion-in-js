@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <style>
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #container-card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      #accordion h3 {
+        background-color: #333;
+        color: #fff;
+        margin: 0;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      #accordion button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      #accordion-content {
+        padding: 16px;
+        color: #333;
+      }
+      #accordion.active #accordion-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-card"></div>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
